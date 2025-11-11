@@ -1,0 +1,27 @@
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth font rendering */
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d0d0f; /* Dark background globally */
+  color: #fff;
+  height: 100%;
+}
+
+/* Make the app take full height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}

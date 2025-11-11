@@ -1,0 +1,227 @@
+/* =========================
+   Verify Email - Cyber Glass Theme
+========================= */
+
+.page-wrap {
+  background: radial-gradient(circle at top, rgba(255, 58, 122, 0.08), #0b0b0c 70%);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: transparent;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6), 5px 5px 25px rgba(255, 58, 122, 0.15);
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-join {
+  color: #ff3a7a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Layout */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Form */
+.form-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(255, 58, 122, 0.12);
+  border-radius: 18px;
+  padding: 40px;
+  width: 420px;
+  animation: fadeIn 0.5s ease;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.sub {
+  color: var(--subtext-color);
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.sub b {
+  color: #fff;
+}
+
+/* OTP Inputs */
+.digit-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.digit-inputs input {
+  width: 50px;
+  height: 55px;
+  text-align: center;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.digit-inputs input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(255, 58, 122, 0.4);
+  outline: none;
+}
+
+/* Buttons */
+.primary-btn {
+  background: linear-gradient(90deg, #ff3a7a, #ff6a7a);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 58, 122, 0.5);
+}
+
+/* Extra actions */
+.verify-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.link-btn:hover {
+  text-shadow: 0 0 8px var(--primary);
+}
+
+/* Timer */
+.verify-timer {
+  color: #ff3a7a;
+  font-weight: 600;
+}
+
+/* Right Info Section */
+.info-section {
+  max-width: 350px;
+  margin-top: 40px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.info-section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 58, 122, 0.6);
+}
+
+.info-section p {
+  color: var(--subtext-color);
+  font-size: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .info-section {
+    text-align: center;
+  }
+}

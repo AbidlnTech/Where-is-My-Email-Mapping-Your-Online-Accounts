@@ -1,0 +1,24 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0f; /* Dark background */
+  color: #fff;
+}
+
+/* Remove default padding for root */
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
+}

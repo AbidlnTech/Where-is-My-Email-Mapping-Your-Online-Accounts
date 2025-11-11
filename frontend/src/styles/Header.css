@@ -1,0 +1,64 @@
+/* =========================
+   Header Component Styling
+========================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  z-index: 50;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo span {
+  font-weight: 800;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.header-logo .highlight {
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(255, 58, 122, 0.7);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: var(--subtext-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(255, 58, 122, 0.7);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+  .nav-links {
+    gap: 14px;
+  }
+}

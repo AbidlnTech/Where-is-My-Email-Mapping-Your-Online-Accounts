@@ -1,0 +1,305 @@
+/* === Fortify Modern Neon Theme === */
+.fortify-container {
+  background: radial-gradient(circle at top, #0b0b11, #000);
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Header === */
+.title.neon {
+  font-size: 2.6rem;
+  color: #ff4bd8;
+  text-shadow: 0 0 15px #ff4bd8, 0 0 30px #b30089;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #bfbfbf;
+  margin-bottom: 40px;
+}
+
+/* === Input Section === */
+.input-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.glow-input {
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 2px solid #ff4bd8;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 75, 216, 0.4);
+}
+.glow-input:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(255, 75, 216, 0.8);
+}
+
+.primary-btn {
+  background: #ff4bd8;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff4bd8;
+  transition: 0.3s ease;
+}
+.primary-btn:hover {
+  background: #ff6ee0;
+  transform: scale(1.03);
+}
+
+/* === Strength Meter === */
+.strength-meter {
+  margin: 30px auto 10px;
+  width: 260px;
+  height: 140px;
+  position: relative;
+}
+
+.strength-meter svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px #ff4bd8);
+}
+
+.strength-meter text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+/* === Exposure Box === */
+.exposure-box {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.safe {
+  color: #4aff78;
+}
+.danger {
+  color: #ff4b4b;
+}
+.warn {
+  color: #ffa64b;
+}
+
+/* === Suggestions Section === */
+.suggestions-section {
+  margin-top: 50px;
+}
+
+.suggestions-section h2 {
+  color: #ffd6f9;
+  text-shadow: 0 0 8px #ff4bd8;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.suggestion-list {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.suggestion-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 75, 216, 0.4);
+  border-radius: 16px;
+  padding: 18px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 75, 216, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.suggestion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 75, 216, 0.5);
+}
+
+.pw-box {
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.copy-btn {
+  background: rgba(255, 75, 216, 0.2);
+  border: 1px solid #ff4bd8;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.copy-btn:hover {
+  background: #ff4bd8;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* === Saved Passwords Section === */
+.saved-section {
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 75, 216, 0.3);
+  padding-top: 30px;
+}
+
+.saved-section h2 {
+  color: #ffd6f9;
+  text-shadow: 0 0 8px #ff4bd8;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #ff4bd8;
+  color: #ff4bd8;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.secondary-btn:hover {
+  background: #ff4bd8;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.saved-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Each Saved Password Card */
+.saved-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 75, 216, 0.3);
+  padding: 14px 20px;
+  border-radius: 14px;
+  width: 70%;
+  max-width: 650px;
+  box-shadow: 0 0 20px rgba(255, 75, 216, 0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+.saved-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(255, 75, 216, 0.4);
+}
+
+.saved-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.saved-password {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  font-family: monospace;
+}
+
+.timestamp {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+/* === Delete Button === */
+.delete-btn {
+  background: rgba(255, 75, 75, 0.15);
+  border: 1px solid #ff4b4b;
+  color: #ff4b4b;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.delete-btn:hover {
+  background: #ff4b4b;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff4b4b;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* === Misc === */
+.muted {
+  color: #888;
+}
+
+.copied-msg {
+  margin-top: 15px;
+  color: #4aff78;
+  font-weight: 600;
+  animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .glow-input {
+    width: 80%;
+  }
+  .saved-item {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .delete-btn {
+    align-self: flex-end;
+  }
+}
